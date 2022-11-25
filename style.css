@@ -7,14 +7,14 @@
 body {
     border: 1px solid grey;
     display: grid;
-    grid-template-columns: repeat(9, 100px);
-    grid-template-rows: repeat(8, 100px);
+    grid-template-columns: repeat(9, 80px);
+    grid-template-rows: repeat(9, 80px);
 }
 
 .gameBox {
     border: 1px solid black;
     grid-column: 4 / 7;
-    grid-row: 3 / 6;
+    grid-row: 4 / 7;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -22,4 +22,21 @@ body {
 
 .gameSquare {
     border: 1px solid rgb(192, 188, 188);
+}
+
+.activeX {
+    background-color: lightcoral;
+
+}
+
+.activeO {
+    background-color: lightblue;
+}
+
+.gameDisplay {
+    grid-column: 3 / 8;
+    grid-row: 2 / 3;
+    border: 1px solid grey;
+    justify-items: center;
+    align-items: center;
 }
